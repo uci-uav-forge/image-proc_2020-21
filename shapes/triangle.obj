@@ -1,0 +1,11 @@
+# Blender v2.81 (sub 16) OBJ File: ''
+# www.blender.org
+mtllib triangle.mtl
+o Triangle
+v -0.152400 -0.000000 0.101585
+v 0.152400 -0.000000 0.101585
+v 0.000000 0.000000 -0.203170
+vn 0.0000 1.0000 0.0000
+usemtl SVGMat.089
+s 1
+f 1//1 2//1 3//1
