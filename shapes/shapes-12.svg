@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="612pt" height="792pt" viewBox="0 0 612 792">
+<g enable-background="new">
+<g>
+<clipPath id="cp11">
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 0 0 L 310896 0 L 310896 402336 L 0 402336 L 0 0 Z "/>
+</clipPath>
+<g clip-path="url(#cp11)">
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 0 0 L 310896 0 L 310896 402336 L 0 402336 Z " fill-opacity="0" fill-rule="evenodd"/>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 18288.057 73073.55 L 18288.057 73073.55 C 18331.342 42803.634 42882.13 18287.96 73152.07 18288 C 103422.019 18288.04 127972.738 42803.775 128015.949 73073.69 Z " fill="#ffffff" fill-rule="evenodd"/>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="381" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M 18288.057 73073.55 L 18288.057 73073.55 C 18331.342 42803.634 42882.13 18287.96 73152.07 18288 C 103422.019 18288.04 127972.738 42803.775 128015.949 73073.69 Z "/>
+<text xml:space="preserve" transform="matrix(.75 0 0 .75 67.63246 67.63246)" font-size="120" font-family="Arial" font-weight="bold"><tspan y="66.6" x="55.153459">Q</tspan></text>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 182880 18288 L 292608 18288 L 292608 128016 L 182880 128016 Z " fill="#ffffff" fill-rule="evenodd"/>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="381" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M 182880 18288 L 292608 18288 L 292608 128016 L 182880 128016 Z "/>
+<text xml:space="preserve" transform="matrix(.75 0 0 .75 360 36)" font-size="160" font-family="Arial" font-weight="bold"><tspan y="201.59999" x="86.22656">R</tspan></text>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 18288 201168 L 18288 201168 C 18288 170867.46 42851.45 146304 73152 146304 C 87702.839 146304 101657.71 152084.3 111946.7 162373.3 C 122235.7 172662.3 128016 186617.16 128016 201168 C 128016 231468.55 103452.55 256032 73152 256032 C 42851.45 256032 18288 231468.55 18288 201168 Z " fill="#ffffff" fill-rule="evenodd"/>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="381" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M 18288 201168 L 18288 201168 C 18288 170867.46 42851.45 146304 73152 146304 C 87702.839 146304 101657.71 152084.3 111946.7 162373.3 C 122235.7 172662.3 128016 186617.16 128016 201168 C 128016 231468.55 103452.55 256032 73152 256032 C 42851.45 256032 18288 231468.55 18288 201168 Z "/>
+<text xml:space="preserve" transform="matrix(.75 0 0 .75 67.63246 319.63249)" font-size="160" font-family="Arial" font-weight="bold"><tspan y="159.42337" x="48.464006">S</tspan></text>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 182880 175355.58 L 211931.58 175355.58 L 211931.58 146304 L 263556.4 146304 L 263556.4 175355.58 L 292608 175355.58 L 292608 226980.42 L 263556.4 226980.42 L 263556.4 256032 L 211931.58 256032 L 211931.58 226980.42 L 182880 226980.42 Z " fill="#ffffff" fill-rule="evenodd"/>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="381" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M 182880 175355.58 L 211931.58 175355.58 L 211931.58 146304 L 263556.4 146304 L 263556.4 175355.58 L 292608 175355.58 L 292608 226980.42 L 263556.4 226980.42 L 263556.4 256032 L 211931.58 256032 L 211931.58 226980.42 L 182880 226980.42 Z "/>
+<text xml:space="preserve" transform="matrix(.75 0 0 .75 417.18815 288)" font-size="146.66667" font-family="Arial" font-weight="bold"><tspan y="196.8" x="22.957379">T</tspan></text>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 17593 383773 L 72457 274045 L 127321 383773 Z " fill="#ffffff" fill-rule="evenodd"/>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="381" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M 17593 383773 L 72457 274045 L 127321 383773 Z "/>
+<text xml:space="preserve" transform="matrix(.75 0 0 .75 88.63189 647.4586)" font-size="146.66667" font-family="Arial" font-weight="bold"><tspan y="104.56" x="19.044777">U</tspan></text>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" d="M 237744 301477 C 260604 237469 349758 301477 237744 383773 C 125730 301477 214884 237469 237744 301477 Z " fill="#ffffff" fill-rule="evenodd"/>
+<path transform="matrix(.001968504,0,0,.001968504,0,0)" stroke-width="381" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M 237744 301477 C 260604 237469 349758 301477 237744 383773 C 125730 301477 214884 237469 237744 301477 Z "/>
+<text xml:space="preserve" transform="matrix(.75 0 0 .75 396 593.4586)" font-size="160" font-family="Arial" font-weight="bold"><tspan y="146.59999" x="42.640626">V</tspan></text>
+</g>
+</g>
+</g>
+</svg>
