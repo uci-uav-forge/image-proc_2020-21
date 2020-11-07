@@ -12,11 +12,11 @@ if __name__=='__main__':
     args = parser.parse_args()
 
     shapes_list = ['Half_Circle', 'Circle', 'Heart', 'Plus', 'Square', 'Triangle']
-    letters_list = list(string.ascii_uppercase)
+    alphanumeric_list = list(string.ascii_uppercase) + [str(i) for i in range(10)]
 
     for shape in shapes_list:
-        for letter in letters_list:
-            command = "{} --background --use-extension 1 -E CYCLES -t 0 -P 'get_dataset.py' -- --shape {} --letter {} --num_images {}".format(args.blender_path, shape, letter, args.num_images)
+        for alphanumeric in alphanumeric_list:
+            command = "{} --background --use-extension 1 -E CYCLES -t 0 -P 'get_dataset.py' -- --shape {} --alphanumeric {} --num_images {}".format(args.blender_path, shape, alphanumeric, args.num_images)
             process = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, universal_newlines=True)
             output = process.stdout
             print(output)
