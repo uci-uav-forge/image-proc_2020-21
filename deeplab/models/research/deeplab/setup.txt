@@ -1,0 +1,78 @@
+python version 2.7
+tensorflow version 1.14.0
+
+git clone "https://github.com/tensorflow/models.git"
+
+Folder Structure
++models
+    +deeplab
+        +datasets
+            +PQR (our custom dataset, make this dir)
+                +dataset 
+                    +ImageSets 
+                        - train.txt
+                        - trainval.txt
+                        - val.txt
+                    +JPEGImages
+                        - img_1.jpg
+                        - img_2.jpg
+                    +SegmentationClass
+                        - img_1.jpg         (notice same name as images in JPEGImages)
+                        - img_2.jpg
+                    +SegmentationClassRaw (don't make this directory, label_pqr.py will make it)
+                +exp
+                    +train_on_trainval_set
+                +init_models
+                    +deeplabv3_pascal_train_aug (download tar.gz file, put in init_models directory 
+                        and open it and this directory should appear)
+                +tfrecord
+
+Directory Explanations
+-ImageSets
+-> make 3 txt files
+    - train.txt (with names of training images in each row without image extension)
+    - val.txt (with names of validation images in each row without image extension)
+    - trainval.txt (with names of both training and validation images in each row without image extension)
+-JPEGImages
+-> all images
+-SegmentationClass
+-> segmentation masks with color
+-SegmentationClassRaw
+-> segmentation masks with indexed color, run label_pqr.py to get this 
+-exp
+-> all training/evaluation/visualization files will go in here
+-deeplabv3_pascal_train_aug: pretrained weights download
+-> download this, put it in this folder, unpack it, done
+-> http://download.tensorflow.org/models/deeplabv3_pascal_train_aug_2018_01_04.tar.gz
+
+1: pip3 install --user gast==0.2.2
+2: pip3 install tf_slim
+3: From tensorflow/models/research/
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+4: From tensorflow/models/research/deeplab/datasets 
+python3.7 datasets/label_pqr.py
+5: From tensorflow/models/research/deeplab/datasets 
+python3.7 ./build_new_pqr_data.py --image_folder="./PQR/dataset/JPEGImages" --semantic_segmentation_folder="./PQR/dataset/SegmentationClassRaw" --list_folder="./PQR/dataset/ImageSets" --image_format="jpg" --output_dir="./PQR/tfrecord"
+- note: replace paths like "./PQR/dataset/JPEGImages" with the complete path in case the script can't find it
+6: From tensorflow/models/research/deeplab
+bash train-pqr.sh
+7: From tensorflow/models/research/deeplab
+python3.7 inference.py 
+- note: change the class labels and image path at the very bottom of this script for now
+
+Notes:
+- to add/change classes
+    - go to train-pqr.sh and change --num_classes=2 
+    - go to models/research/deeplab/datasets/data_generator.py and change:
+            _PQR_SEG_INFORMATION = DatasetDescriptor(
+                splits_to_sizes={
+                    'train': 3, # number of file in the train folder
+                    'trainval': 5,
+                    'val': 2,
+                },
+                num_classes=2, # number of classes in your dataset
+                ignore_label=255, # white edges that will be ignored to be class
+            )
+    - go to models/research/deeplab/inference.py and update the class names at the very bottom
+    - go to datasets/label_pqr.py and add color:class pairs to palette 
+    - put images correctly in ImageSets, JPEGImages, SegmentationClass
